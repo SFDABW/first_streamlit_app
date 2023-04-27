@@ -3,7 +3,6 @@ import pandas
 import requests
 import snowflake.connector
 from urllib.error import URLError
-
 streamlit.title('My Moms New Healthy Diner')
 
 streamlit.header('Breakfast Favorites')
@@ -23,7 +22,6 @@ fruits_to_show = my_fruit_list.loc[fruits_selected]
 
 #display the table on the page
 streamlit.dataframe(fruits_to_show)
-
 
 #create the repeatable code block (called a function)
 def get_fruityvice_data(this_fruit_choice):
